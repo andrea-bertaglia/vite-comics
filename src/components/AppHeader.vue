@@ -97,7 +97,7 @@ header {
 
         a {
           text-decoration: none;
-          color: $black-color;
+          color: $primary-black-color;
 
           &:hover {
             color: $primary-color;

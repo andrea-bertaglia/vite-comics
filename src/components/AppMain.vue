@@ -23,7 +23,7 @@ main {
     width: 100%;
     max-width: 1440px;
     height: 150px;
-    background-color: $black-color;
+    background-color: $secondary-black-color;
 
     h2 {
       color: $white-color;
