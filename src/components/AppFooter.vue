@@ -105,7 +105,7 @@ footer {
     @include flex(column, center, center);
     background-image: url("../assets/img/footer-bg.jpg");
     width: 100%;
-    height: 300px;
+    height: 350px;
 
 
     .container {
@@ -155,7 +155,7 @@ footer {
     @include flex(column, center, center);
     background-color: $secondary-color;
     width: 100%;
-    height: 100px;
+    height: 150px;
     position: relative;
 
 
