@@ -17,13 +17,15 @@ export default {};
 
 main {
   @include flex(row, center, center);
+  background-color: $secondary-black-color;
+  position: relative;
+
 
   .container {
     @include flex(row, center, center);
-    width: 100%;
+    width: 80%;
     max-width: 1440px;
     height: 150px;
-    background-color: $secondary-black-color;
 
     h2 {
       color: $white-color;
