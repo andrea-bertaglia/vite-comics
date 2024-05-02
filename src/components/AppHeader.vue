@@ -57,7 +57,7 @@ export default {
       </div>
 
       <ul class="header-menu">
-        <li v-for="item in menu">
+        <li v-for="item in menu" :class="{ active: item.isActive }">
           <a href="#" :class="{ active: item.isActive }"> {{ item.title.toUpperCase() }}</a>
         </li>
       </ul>
@@ -80,13 +80,20 @@ header {
     height: 150px;
 
     .header-menu {
-      @include flex(row, space-between, center);
+      @include flex(row, center, center);
       list-style-type: none;
-      gap: 1em;
+      gap: .5em;
+      font-weight: bold;
+      height: 100%;
 
       li {
+        @include flex(row, center, center);
         height: 100%;
-        display: inline-block;
+        border-bottom: .3em solid $white-color;
+
+        &.active {
+          border-bottom: .3em solid $primary-color;
+        }
 
         a {
           text-decoration: none;
@@ -98,9 +105,11 @@ header {
 
           &.active {
             color: $primary-color;
+
           }
         }
       }
+
 
     }
   }
