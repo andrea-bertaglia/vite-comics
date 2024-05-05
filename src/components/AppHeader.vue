@@ -79,6 +79,10 @@ header {
     max-width: 1440px;
     height: 150px;
 
+    .header-logo {
+      padding-top: 1em;
+    }
+
     .header-menu {
       @include flex(row, center, center);
       list-style-type: none;
