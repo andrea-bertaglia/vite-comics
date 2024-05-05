@@ -96,6 +96,10 @@ export default {
         <div class="col" v-for="comic in comicsArray">
           <AppCards :thumb="comic.thumb" :series="comic.series" />
         </div>
+        <div class="btn">
+
+          <a href="#" class="btn">LOAD MORE</a>
+        </div>
       </div>
     </section>
 
@@ -145,12 +149,27 @@ main {
       flex-wrap: wrap;
       gap: 1em;
       width: 100%;
-      padding-bottom: 3em;
 
       .col {
         width: calc(100% / 6 * 1 - 1em);
       }
 
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1.5em;
+
+      a {
+        color: $white-color;
+        background-color: $primary-color;
+        text-decoration: none;
+        padding: .7em 4em;
+        font-size: .7rem;
+        font-weight: bold;
+
+      }
     }
 
   }

@@ -155,7 +155,7 @@ footer {
     @include flex(column, center, center);
     background-color: $secondary-color;
     width: 100%;
-    height: 150px;
+    height: 100px;
     position: relative;
 
 

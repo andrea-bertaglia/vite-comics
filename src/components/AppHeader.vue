@@ -80,7 +80,7 @@ header {
     height: 150px;
 
     .header-logo {
-      padding-top: 1em;
+      padding-top: .5em;
     }
 
     .header-menu {
