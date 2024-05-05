@@ -71,6 +71,7 @@ main {
             width: calc(100% / 5 * 1);
 
             img {
+                width: 50px;
                 max-width: 30%;
                 padding-right: .5em;
             }

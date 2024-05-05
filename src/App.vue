@@ -1,5 +1,5 @@
 <script>
-import AppBanner from './components/AppBanner.vue';
+import ListIcons from './components/ListIcons.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
@@ -10,7 +10,7 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-    AppBanner,
+    ListIcons,
   }
 }
 </script>
@@ -18,7 +18,7 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
-  <AppBanner />
+  <ListIcons />
   <AppFooter />
 </template>
 
