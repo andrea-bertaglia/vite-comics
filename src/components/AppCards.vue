@@ -2,17 +2,15 @@
 export default {
     props: {
         thumb: String,
-        price: String,
         series: String,
-        type: String
     }
 };
 </script>
 
 <template>
     <div class="card">
-        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="testo">
-        <h4>ACTION</h4>
+        <img :src="`${thumb}`" :alt="`${series}`">
+        <h4>{{ series.toUpperCase() }}</h4>
     </div>
 </template>
 
@@ -21,14 +19,17 @@ export default {
 @use "../style/partials/variables" as *;
 
 .card {
-    width: 20%;
+    padding-bottom: 1em;
 
     img {
         max-width: 100%;
+        aspect-ratio: 1;
     }
 
     h4 {
+        padding-top: .5em;
         color: $white-color;
+        font-size: .6rem;
     }
 }
 </style>

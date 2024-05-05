@@ -6,7 +6,7 @@ export default {
   },
   data() {
     return {
-      cardArray: [
+      comicsArray: [
         {
           thumb: "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
           price: "$19.99",
@@ -93,8 +93,8 @@ export default {
         <h2>CURRENT SERIES</h2>
       </div>
       <div class="row">
-        <div class="col">
-          <AppCards />
+        <div class="col" v-for="comic in comicsArray">
+          <AppCards :thumb="comic.thumb" :series="comic.series" />
         </div>
       </div>
     </section>
@@ -141,11 +141,15 @@ main {
     }
 
     .row {
-      background-color: lightseagreen;
-
+      @include flex(row, space-between, stretch);
+      flex-wrap: wrap;
+      gap: 1em;
       width: 100%;
+      padding-bottom: 3em;
 
-      .col {}
+      .col {
+        width: calc(100% / 6 * 1 - 1em);
+      }
 
     }
 
